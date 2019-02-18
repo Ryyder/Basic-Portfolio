@@ -1,1 +1,50 @@
-css
+/* Position nav bar top right of page */
+nav {
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 30px;
+
+}
+
+/* links in gray color */
+a {
+
+    color: lightgray;
+
+}
+
+/* Position name on top left of page */
+h1 {
+
+    top: 0;
+    left: 0;
+    /* background-color: gray; */
+    /* color: white; */
+}
+
+/* About Me text modifications */
+h2 {
+
+    color: lightgray;
+
+}
+
+/* Line across the screen to split up content */
+hr {
+
+    height: 2px;
+    background-color: lightgray;
+    border: none;
+
+}
+
+/* Footer */
+footer {
+
+    background-color: darkgray;
+    text-align: center;
+    color: white;
+
+}
