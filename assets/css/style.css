@@ -5,29 +5,51 @@ header {
     font-family: Times;
     /* padding-left: 20px; */
     width: 960px;
+    margin: 0 auto;
+    margin-top: -20px;
 
 }
 
 
-/* Position nav bar top right of page */
+/* Position nav bar top right of page, within my margin */
 nav {
 
-    position: absolute;
-     top: 0;
-     right: 0;
-     /*padding: 35px; */
-    margin-top: 37px;
-    margin-right: 30px;
+    float: right;
+    top: 0;
+    right: 0;
+    margin-top: -60px;
     color: #4aaaa5;
+
+    /* position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 440px;
+    margin-top: 20px; */
+
 
 }
 
-/* Content background color */
+/* Section background  image */
 section {
 
+    background-image: url("../images/dynamic-style.png");
+    padding-top: 35px;
+    margin-top: -26px;
+    height: 600px;
+
+}
+
+/* Content background color, margins */
+.sectionContent {
+
     background-color: #ffffff;
-    height: 400px;
+    font-family: Times;
+    color: #777777;
+    height: auto;
     padding-top: 10px;
+    width: 960px;
+    margin: 0 auto;
+    background-image: none;
 
 }
 
@@ -43,7 +65,8 @@ h1 {
 
     top: 0;
     left: 0;
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    padding-top: 20px;
     color: white;
 
 }
@@ -52,15 +75,16 @@ h1 {
 h2 {
 
     padding-left: 10px;
-    color: gray;
+    color: #4aaaa5;
 
 }
 
-body {
+
+/* body {
 
     background-image: url("../images/dynamic-style.png");
 
-}
+} */
 
 /* text in <p> tag text in <section> gray */
 .bodyGray {
@@ -68,18 +92,9 @@ body {
     margin: 4px;
     color: #777777;
     line-height: 1.6;
+    padding-right: 10px;
 
 }
-
-/* Line across the screen to split up content */
-/* hr {
-
-    height: 2px;
-    background-color: lightgray;
-    border: none;
-    width: 97.8%;
-
-} */
 
 /* Header border specifications */
 .headerBorder {
@@ -87,7 +102,6 @@ body {
     background-color: #cccccc;
     height: 2px;
     border: none;
-    width: 960px;
 
 }
 
@@ -97,7 +111,8 @@ body {
     background-color: #dddddd;
     height: 2px;
     border: none;
-    width: 960px;
+    width: 940px;
+
 
 }
 
@@ -117,16 +132,53 @@ body {
 /* Highlighting Bruce in gray */
 span {
 
-    background-color: gray;
-    padding: 22.5px;
+    background-color: #4aaaa5;
+    padding: 22px 10px 22.5px 10px;
+    
 }
 
 /* Image positioning */
 img {
 
     float: left;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     padding: 10px;
     
+}
+
+/* Positioning form element */
+form {
+
+    margin-left: 10px;
+    padding-top: 10px;
+
+}
+
+/* positioning input element */
+input {
+
+    width: 915px;
+    padding: 10px;
+    padding-top: 10px;
+
+}
+
+/* Message box with adjustable vertical scroll */
+textarea {
+
+    width: 915px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    resize: vertical;
+    overflow: auto;
+
+}
+
+input[type=submit] {
+
+    margin-top: 10px;
+    width: 100px;
+
 }

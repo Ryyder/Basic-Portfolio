@@ -4,7 +4,7 @@
 
     <head>
 
-        <link = "stylesheet"
+        <link rel = "stylesheet"
         type = "text/css"
         a href = "assets/css/style.css">
 
@@ -13,30 +13,70 @@
 
     <body>
 
-        <h1>Contact</h1>
+        <header>
 
-        <form>
+            <h1><span>Bruce Cho</span></h1>
+            <hr class = "headerBorder">
+        
+            <nav>
+        
+                <a href = "index.html">About</a> | <a href = "Portfolio.html">Portfolio</a> | <a href = "Contact.html">Contact</a>
+        
+        
+            </nav>
+                
+        </header>
+        <br>
 
-            Name:
-            <br>
+        <section>
 
-            <input type = "text" name = "name" size = "35">
-            <br>
+            <section class = "sectionContent">
             
-            Email:
-            <br>
+                <h2>Contact</h2>
+                <hr class = "contentBorder">
 
-            <input type = "text" name = "email" size ="35">
-            <br>
+                <form>
 
-            Message:
-            <br>
+                    Name:
+                    <br>
+
+                    <input type = "text" name = "name" value = "John Smith">
+                    <br>
+                    <br>
             
-            <input type = "text" name = "message" size = "500">
-            <br>
+                    Email:
+                    <br>
+                    <br>
 
-        </form>
+                    <input type = "text" name = "email" value = "example@gmail.com">
+                    <br>
+                    <br>
 
+                    Message:
+                    <br>
+                    <br>
+
+                    <textarea id="message" name="message"></textarea>
+
+                    <!-- <input type = "text" name = "message">
+                    <br>
+                    <br> -->
+
+                    <input type = "submit" value = "Submit">
+                    <br>
+                    <br>
+
+                </form>
+
+            </section>
+
+        </section>
+
+        <div class = "footer">
+
+                <p>Copyright Ⓒ</p>
+            
+        </div>
 
     </body>
 
