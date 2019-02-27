@@ -1,47 +1,30 @@
 /* Header specifications */
 header {
-
+    position: relative;
     background-color: #ffffff;
     font-family: Times;
-    /* padding-left: 20px; */
     width: 960px;
     margin: 0 auto;
     margin-top: -20px;
-
 }
-
 
 /* Position nav bar top right of page, within my margin */
 nav {
-
-    float: right;
+    position: absolute;
     top: 0;
     right: 0;
-    margin-top: -60px;
+    margin-top: 22px;
     color: #4aaaa5;
-
-    /* position: fixed;
-    top: 10px;
-    right: 20px;
-    width: 440px;
-    margin-top: 20px; */
-
-
 }
 
-/* Section background  image */
-section {
-
-    background-image: url("../images/dynamic-style.png");
-    padding-top: 35px;
-    margin-top: -26px;
-    height: 600px;
-
+/* Top header white color background */
+.headerBackground {
+    width: 100%;
+    background-color: #ffffff;
 }
 
 /* Content background color, margins */
 .sectionContent {
-
     background-color: #ffffff;
     font-family: Times;
     color: #777777;
@@ -50,135 +33,162 @@ section {
     width: 960px;
     margin: 0 auto;
     background-image: none;
-
 }
 
-/* links in gray color */
+/* Links in gray color */
 a {
-
     color: #4aaaa5;
+}
 
+/* Mouse-over link changes color */
+a:hover {
+    background-color: #666666;
 }
 
 /* Position name on top left of page */
 h1 {
-
     top: 0;
     left: 0;
-    /* padding-left: 10px; */
     padding-top: 20px;
-    color: white;
-
+    color: #ffffff;
 }
 
 /* About Me text modifications */
 h2 {
-
     padding-left: 10px;
     color: #4aaaa5;
-
 }
 
-
-/* body {
-
+/* Background Image */
+body {
+    margin: 0;
     background-image: url("../images/dynamic-style.png");
+}
 
-} */
-
-/* text in <p> tag text in <section> gray */
+/* Text in <p> tag text in <section> gray */
 .bodyGray {
-
     margin: 4px;
     color: #777777;
     line-height: 1.6;
     padding-right: 10px;
-
+    font-family: sans-serif;
 }
 
 /* Header border specifications */
 .headerBorder {
-
     background-color: #cccccc;
     height: 2px;
+    width: 100%;
     border: none;
-
 }
 
 /* Content border specifications */
 .contentBorder {
-
     background-color: #dddddd;
     height: 2px;
     border: none;
     width: 940px;
-
-
 }
 
 /* Footer */
 .footer {
-
     position: fixed;
     left: 0;
     bottom: 0;
     background-color: #666666;
+    border-top: 5px solid #cccccc;
     text-align: center;
-    color: white;
+    font-size: 10px;
+    color: #cccccc;
     width: 100%;
-
+    font-family: sans-serif;
 }
 
 /* Highlighting Bruce in gray */
 span {
-
     background-color: #4aaaa5;
-    padding: 22px 10px 22.5px 10px;
-    
+    padding: 22px 10px 21px 10px;
 }
 
-/* Image positioning */
-img {
-
+/* Image positioning on index page*/
+.imgSelf {
     float: left;
     width: 200px;
     height: 200px;
     padding: 10px;
-    
 }
 
 /* Positioning form element */
 form {
-
     margin-left: 10px;
     padding-top: 10px;
-
+    font-family: sans-serif;
 }
 
 /* positioning input element */
 input {
-
-    width: 915px;
+    width: 99%;
     padding: 10px;
     padding-top: 10px;
-
 }
 
 /* Message box with adjustable vertical scroll */
 textarea {
-
-    width: 915px;
+    width: 99%;
     height: 100px;
     padding: 10px;
     border: 1px solid #cccccc;
     resize: vertical;
     overflow: auto;
-
 }
 
+/* Submit button */
 input[type=submit] {
-
     margin-top: 10px;
     width: 100px;
-
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: sans-serif;
+    border: none;
 }
+
+/* Make all box/text boxes same size */
+* {
+    box-sizing: border-box;
+} 
+
+/* Box settings for my floated images */
+.box {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Text for portfolio page */
+.portfolioText {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 74.9%;
+    background-color: gray;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+/* Portfolio image setting */
+.portfolioImage {
+    height: 80%;
+    width: 80%;
+}
+    
